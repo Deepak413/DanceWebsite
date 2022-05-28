@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title D's Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            div#logo
+                | JUST
+                img(src="/static/images/dancelogo.png", alt="DanceDilSe")
+                | DANCE 
+
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+            
+    section#introSection 
+        div Welcome to the Dance Academy
+        div.smIntro Dance Dil se
+
+    section#missionSection 
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/images/card1.png", alt="")
+                div.card-content
+                    p One of the best dance academy among all
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/images/card1.png", alt="")
+                div.card-content
+                    p One of the best dance academy among all
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/images/card1.png", alt="")
+                div.card-content
+                    p One of the best dance academy among all
+        
+
+    section#sponsorsSection 
+        h2 Our sponsors
+        div#sponsors
+            img(src="/static/images/apple.png", alt="Sponsors Image", class="spImage")
+            img(src="/static/images/amazon.png", alt="Sponsors Image", class="spImage")
+            img(src="/static/images/fb.png", alt="Sponsors Image", class="spImage")
+            img(src="/static/images/microsoft.png", alt="Sponsors Image", class="spImage")
+            
+
+
+    script
+        include ../static/index.js 
